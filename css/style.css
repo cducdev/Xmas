@@ -1,0 +1,165 @@
+/* IMPORT GOOGLE FONT */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
+/* RESET CSS */
+*,
+*:before,
+*:after {
+	box-sizing: border-box;
+}
+* {
+	margin: 0;
+	padding: 0;
+	font: inherit;
+	font-family: "Poppins", serif;
+}
+img,
+picture,
+svg,
+video {
+	display: block;
+	max-width: 100%;
+}
+body {
+	min-height: 100vh;
+}
+
+/* CSS FOR PAGE */
+svg {
+	display: none;
+	width: 90%;
+	height: 90%;
+	visibility: hidden;
+}
+
+.root {
+	width: 100%;
+	height: auto;
+	position: relative;
+	background: url(https://img.freepik.com/free-photo/nice-christmas-background-white-background-with-copy-space_24972-1722.jpg?w=2000)
+		no-repeat;
+	background-size: cover;
+}
+
+.flex {
+	display: flex;
+}
+
+.center-column {
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.white-text {
+	color: #fff;
+}
+
+.container {
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	margin: 0 auto;
+}
+
+.input-name-box {
+	background-color: rgba(62, 61, 61, 0.5);
+	width: 90%;
+	max-width: 450px;
+	margin: 0 auto;
+	padding: 10px;
+	border-radius: 8px;
+	text-align: center;
+}
+
+.input-name-box p {
+	font-size: 30px;
+}
+
+#input-name {
+	background-color: transparent;
+	width: 90%;
+	margin: 10px auto;
+	padding: 7px;
+	border: none;
+	border-bottom: 1px solid rgb(77, 75, 75);
+	outline: none;
+	font-size: 20px;
+	transition: all 0.5s;
+}
+
+#input-name::placeholder {
+	color: rgba(255, 255, 255, 0.754);
+}
+.choiceDiv {
+	display: none;
+	width: 90%;
+	margin: 10px auto;
+	font-size: 10px;
+	align-items: center;
+	justify-content: space-around;
+}
+.draw {
+	display: none;
+	background-color: #2dbf64;
+}
+.box {
+	margin: 10px;
+}
+.box select {
+	background-color: #bbbdbf;
+	color: white;
+	padding: 12px;
+	width: 250px;
+	border: none;
+	font-size: 20px;
+	box-shadow: 0 5px 25px rgba(0, 0, 0, 0.2);
+	-webkit-appearance: button;
+	appearance: button;
+	outline: none;
+}
+
+.box::before {
+	content: "\f13a";
+	font-family: FontAwesome;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 20%;
+	height: 100%;
+	text-align: center;
+	font-size: 28px;
+	line-height: 45px;
+	color: rgba(255, 255, 255, 0.5);
+	background-color: rgba(255, 255, 255, 0.1);
+	pointer-events: none;
+}
+
+.box:hover::before {
+	color: rgba(255, 255, 255, 0.6);
+	background-color: rgba(255, 255, 255, 0.2);
+}
+
+.box select option {
+	padding: 30px;
+}
+.error-msg {
+	display: none;
+	width: 90%;
+	font-size: 15px !important;
+	font-weight: bold;
+	color: rgb(255, 38, 38);
+	margin: 5px 0px;
+	transition: all 0.5s;
+}
+
+.btn {
+	cursor: pointer;
+	padding: 15px 20px;
+	border-radius: 4px;
+	margin: 10px 0px;
+}
+
+.green {
+	background-color: #2dbf64;
+}
